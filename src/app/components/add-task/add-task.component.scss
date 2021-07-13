@@ -1,3 +1,18 @@
 .add-form {
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+}
+
+.mat-slide-toggle-label{
+  height: fit-content;
+  margin-bottom: 16px;
+}
+
+button{
+  margin-top: 18px;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 1em;
 }

@@ -9,9 +9,10 @@ import {Router} from '@angular/router'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'Task Tracker';
+  title: string = 'My Tasks';
   showAddTask: boolean = false;
   subscription!: Subscription;
+  addIcon: string = "add_circle";
 
   constructor(private uiService:UiService, private router:Router) {
     this.subscription = this.uiService.onToggle().subscribe(value => (this.showAddTask = value))
@@ -21,6 +22,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleAddTask() {
+    this.addIcon = this.showAddTask ? "add_circle" : "remove_circle" ;
     this.uiService.toggleAddTask();
   }
 
