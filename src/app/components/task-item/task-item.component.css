@@ -1,23 +1,33 @@
-.task {
-  background: #f4f4f4;
-  margin: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.task.reminder {
-  border-left: 5px solid green;
-}
-
-.task h3 {
+.mat-card-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.mat-card {
+  margin-bottom: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+          box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+}
+
+.mat-card.reminder {
+  border-left: 10px solid #3F51B5;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=task-item.component.css.map */

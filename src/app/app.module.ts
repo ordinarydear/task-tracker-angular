@@ -12,6 +12,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MomentDateModule} from '@angular/material-moment-adapter';
+import {MatCardModule} from '@angular/material/card';
 
 
 
@@ -55,6 +56,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatSlideToggleModule,
     MomentDateModule,
     ReactiveFormsModule,
+    MatCardModule
 
 
 

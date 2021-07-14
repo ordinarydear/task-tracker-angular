@@ -1,17 +1,20 @@
-
-.task {
-  background: #ffffff;
-  margin: 10px;
-  padding: 16px 20px;
-  cursor: pointer;
-}
-
-.task.reminder {
-  border-left: 5px solid green;
-}
-
-.task h3 {
+.mat-card-title{
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.mat-card{
+  margin-bottom: 10px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px !important;
+
+  &.reminder{
+    border-left: 10px solid #3F51B5;
+  }
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: none;
 }

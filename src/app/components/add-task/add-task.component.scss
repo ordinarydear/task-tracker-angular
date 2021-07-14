@@ -1,7 +1,10 @@
 .add-form {
   display: flex;
   flex-direction: column;
-  margin: 0 30px;
+  padding: 20px;
+  background: #fff;
+
+
 }
 
 .mat-slide-toggle-label{
@@ -11,6 +14,7 @@
 
 button{
   margin-top: 18px;
+  height: 48px;
 }
 
 :host ::ng-deep .mat-form-field-wrapper {

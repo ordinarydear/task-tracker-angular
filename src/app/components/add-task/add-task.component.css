@@ -1,4 +1,28 @@
 .add-form {
-  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background: #fff;
+}
+
+.mat-slide-toggle-label {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: 16px;
+}
+
+button {
+  margin-top: 18px;
+  height: 48px;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  padding-bottom: 1em;
 }
 /*# sourceMappingURL=add-task.component.css.map */

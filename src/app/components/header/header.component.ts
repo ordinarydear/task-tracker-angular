@@ -9,7 +9,7 @@ import {Router} from '@angular/router'
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  title: string = 'My Tasks';
+  title: string = 'Task Tracker';
   showAddTask: boolean = false;
   subscription!: Subscription;
   addIcon: string = "add_circle";
